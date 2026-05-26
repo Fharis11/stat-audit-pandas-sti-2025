@@ -1,7 +1,7 @@
 #  Statistical Health Audit — pandas-dev/pandas
 > Final Group Assignment | Probability & Statistics | STI 2025
 Deskripsi Proyek
-Repositori ini berisi audit statistik menyeluruh terhadap proyek open-source pandas-dev/pandas — salah satu library Python paling banyak digunakan di dunia untuk analisis data. Audit ini menerapkan teknik statistik dari Minggu 11–14 (estimasi, inferensi, uji hipotesis, simulasi komputasional) untuk menjawab pertanyaan nyata tentang kesehatan proyek yang berguna bagi para maintainer-nya.
+Repositori ini berisi audit statistik menyeluruh terhadap proyek open-source pandas-dev/pandas salah satu library Python paling banyak digunakan di dunia untuk analisis data. Audit ini menerapkan teknik statistik dari Minggu 11–14 (estimasi, inferensi, uji hipotesis, simulasi komputasional) untuk menjawab pertanyaan nyata tentang kesehatan proyek yang berguna bagi para maintainer-nya.
 Dataset diambil melalui GitHub REST API v3 pada tanggal 24 Mei 2026, mencakup issues dan pull requests dari rentang waktu 2020–2025.
 
 # Research Questions

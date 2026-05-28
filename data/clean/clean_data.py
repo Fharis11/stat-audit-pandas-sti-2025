@@ -18,10 +18,10 @@ print(f"  pulls_raw  : {len(pulls_raw)} item")
 def parse_issues(raw):
     rows = []
     for item in raw:
-        created   = pd.to_datetime(item["created_at"], utc=True)
-        closed    = pd.to_datetime(item["closed_at"],  utc=True) if item.get("closed_at") else None
+        created = pd.to_datetime(item["created_at"], utc=True)
+        closed = pd.to_datetime(item["closed_at"],  utc=True) if item.get("closed_at") else None
         days_open = (closed - created).days if closed else None
-        labels    = [l["name"] for l in item.get("labels", [])]
+        labels = [l["name"] for l in item.get("labels", [])]
         rows.append({
             "id"           : item["number"],
             "type"         : "issue",
@@ -40,10 +40,10 @@ def parse_issues(raw):
 def parse_pulls(raw):
     rows = []
     for item in raw:
-        created   = pd.to_datetime(item["created_at"], utc=True)
-        closed    = pd.to_datetime(item["closed_at"],  utc=True) if item.get("closed_at") else None
+        created = pd.to_datetime(item["created_at"], utc=True)
+        closed = pd.to_datetime(item["closed_at"],  utc=True) if item.get("closed_at") else None
         days_open = (closed - created).days if closed else None
-        labels    = [l["name"] for l in item.get("labels", [])]
+        labels = [l["name"] for l in item.get("labels", [])]
         rows.append({
             "id"           : item["number"],
             "type"         : "pull_request",
@@ -61,21 +61,21 @@ def parse_pulls(raw):
 
 print("\nMemproses...")
 df_issues = parse_issues(issues_raw)
-df_pulls  = parse_pulls(pulls_raw)
-df_all    = pd.concat([df_issues, df_pulls], ignore_index=True)
+df_pulls = parse_pulls(pulls_raw)
+df_all = pd.concat([df_issues, df_pulls], ignore_index=True)
 
 before = len(df_all)
 df_all = df_all.dropna(subset=["days_to_close"])
 df_all = df_all[df_all["days_to_close"] >= 0]
 print(f"  Baris dihapus (anomali): {before - len(df_all)}")
 
-df_all.to_csv(   os.path.join(CLEAN_DIR, "dataset.csv"), index=False)
+df_all.to_csv(os.path.join(CLEAN_DIR, "dataset.csv"), index=False)
 df_issues.to_csv(os.path.join(CLEAN_DIR, "issues.csv"),  index=False)
-df_pulls.to_csv( os.path.join(CLEAN_DIR, "pulls.csv"),   index=False)
+df_pulls.to_csv(os.path.join(CLEAN_DIR, "pulls.csv"),   index=False)
 
 print("\nSELESAI!")
-print(f"   dataset.csv → {len(df_all)} baris")
-print(f"   issues.csv  → {len(df_issues)} baris")
-print(f"   pulls.csv   → {len(df_pulls)} baris")
+print(f"dataset.csv -> {len(df_all)} baris")
+print(f"issues.csv  -> {len(df_issues)} baris")
+print(f"pulls.csv   -> {len(df_pulls)} baris")
 print(f"\nKolom:")
 print(df_all.dtypes)

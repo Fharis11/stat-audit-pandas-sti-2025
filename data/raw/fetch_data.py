@@ -4,8 +4,8 @@ import time
 import os
 
 GITHUB_TOKEN = "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"
-REPO         = "pandas-dev/pandas"
-HEADERS      = {
+REPO = "pandas-dev/pandas"
+HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
     "Accept":        "application/vnd.github.v3+json"
 }
@@ -47,7 +47,6 @@ def fetch_all_pages(url, params, label="data", max_pages=50):
 
     return all_items
 
-
 def main():
     os.makedirs("data/raw", exist_ok=True)
 
@@ -80,12 +79,12 @@ def main():
             if response.status_code == 403:
                 reset_time = int(response.headers.get("X-RateLimit-Reset", time.time() + 60))
                 wait = max(reset_time - time.time(), 0) + 5
-                print(f"  Rate limit! Tunggu {wait:.0f} detik...")
+                print(f"Rate limit! Tunggu {wait:.0f} detik...")
                 time.sleep(wait)
                 continue
 
             if response.status_code != 200:
-                print(f"  Error {response.status_code}: {response.text[:200]}")
+                print(f"Error {response.status_code}: {response.text[:200]}")
                 break
 
             data  = response.json()
@@ -106,7 +105,6 @@ def main():
 
             time.sleep(2)
 
-    # Deduplikasi
     seen = set()
     unique_issues = []
     for i in issues_only:
@@ -122,9 +120,9 @@ def main():
 
     print("\nMengambil pull requests...")
     pulls = fetch_all_pages(
-        url       = f"https://api.github.com/repos/{REPO}/pulls",
-        params    = {"state": "closed", "per_page": 100},
-        label     = "pulls",
+        url = f"https://api.github.com/repos/{REPO}/pulls",
+        params = {"state": "closed", "per_page": 100},
+        label = "pulls",
         max_pages = 25
     )
     print(f"Total pull requests: {len(pulls)}")
@@ -133,9 +131,8 @@ def main():
     print("Disimpan: data/raw/pulls_raw.json")
 
     print("\nSelesai!")
-    print(f"   issues_raw.json → {len(issues_only)} issues")
-    print(f"   pulls_raw.json  → {len(pulls)} pull requests")
-
+    print(f"issues_raw.json → {len(issues_only)} issues")
+    print(f"pulls_raw.json  → {len(pulls)} pull requests")
 
 if __name__ == "__main__":
     main()

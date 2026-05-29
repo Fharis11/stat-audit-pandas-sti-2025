@@ -12,26 +12,26 @@ Dataset diambil melalui GitHub REST API v3 pada tanggal 24 Mei 2026, mencakup is
 | RQ3 | Berapa probabilitas bahwa sebuah issue yang dipilih secara acak membutuhkan lebih dari 30 hari untuk ditutup, diestimasi tanpa formula analitik? | Monte Carlo Simulation | W14 |
 
 # Struktur Repositori
-stat-audit-pandas-sti-2025/
-├── README.md
-├── AI_USAGE_LOG.md
-├── data/
-│   ├── raw/     
-│   └── clean/
-├── src/
-│   ├── estimator.py  
-│   ├── inference.py  
-│   ├── hypothesis.py 
-│   └── simulation.py 
-├── notebooks/
-│   ├── 01_eda.ipynb
-│   ├── 02_estimation.ipynb
-│   ├── 03_confidence_interval.ipynb
-│   ├── 04_hypothesis_testing.ipynb
-│   └── 05_simulation.ipynb
-├── report/statistical_health_report.pdf
-├── presentation/video_link.md
-└── requirements.txt
+- stat-audit-pandas-sti-2025/
+- ├── README.md
+- ├── AI_USAGE_LOG.md
+- ├── data/
+- │   ├── raw/     
+- │   └── clean/
+- ├── src/
+- │   ├── estimator.py  
+- │   ├── inference.py  
+- │   ├── hypothesis.py 
+- │   └── simulation.py 
+- ├── notebooks/
+- │   ├── 01_eda.ipynb
+- │   ├── 02_estimation.ipynb
+- │   ├── 03_confidence_interval.ipynb
+- │   ├── 04_hypothesis_testing.ipynb
+- │   └── 05_simulation.ipynb
+- ├── report/statistical_health_report.pdf
+- ├── presentation/video_link.md
+- └── requirements.txt
 
 # Tim
 | Anggota | Peran | Notebook |
@@ -52,6 +52,9 @@ pip install -r requirements.txt
 
 # 3. Jalankan notebook secara berurutan
 jupyter notebook
+
+# Tujuan Utama
+Belum Selesai
 
 # Dataset
 Sumber: GitHub REST API v3

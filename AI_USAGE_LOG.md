@@ -6,8 +6,8 @@
 |--------|-------|-------|--------------------|-----------------------------|
 | Muhamad Fharis Arradhien | Data Engineer | Claude | 45 % | No |
 | Kevindra Raditya Luthfiansyah | Estimation Analyst | Claude | 45 % | No |
-| Nayla Andhini Novia Dewani | Inference Analyst | - | - % | No |
-| Adhinda Zahra Dinanti | Hypothesis Analyst | - | - % | No |
+| Adhinda Zahra Dinanti | Inference Analyst | - | - % | No |
+| Nayla Andhini Novia Dewani | Hypothesis Analyst | - | - % | No |
 | Bram Radhitya Riezky Prayoga | Computation Analyst | - | - % | No |
 
 # Per-Member Detail
@@ -23,12 +23,13 @@
 | 1 | Tambah validasi input (data kosong, negatif) | Claude | Cara menambahkan pengecekan input yang proper untuk fungsi numpy | diintegrasikan ke fungsi yang sudah ada |
 | 2 | Implementasi Clopper–Pearson CI | Claude | Cara implementasi Clopper-Pearson CI menggunakan scipy | edge case k=0 dan k=n ditambahkan sendiri |
 
-# Member C — Nayla Andhini Novia Dewani
-| # | Task | Tool | Prompt (ringkas) | Cara output digunakan |
+# Member C — Adhinda Zahra Dinanti
+| # | Task | Tool | Prompt (ringkas) | Cara output digunakan | Bagaimana hasil dievaluasi |
 |---|------|------|------------------|----------------------|
-| 1 | | | | |
+| 1 | Bagaimana rumus bekerja | Gemini | "buatkan analogi dari rumus rumus yang saya berikan dengan bahasa yang mudah" | Digunakan sebagai brainstorming | Saya tidak menjadikan AI patokan 100%, hanya menjadi referensi bagaimana cara menganalogikan kode secara mudah |
+| 2 | Pengecekan apakah kode sudah benar | Gemini | "apakah kode yang saya beri sudah benar?" | Digunakan sebagai validasi kode | Gemini menyarankan pergantian kode untuk beberapa bagian, namun saya mendiskusikan dengan tim dan tetap menggunakan konsep awal |
 
-# Member D — Adhinda Zahra Dinanti
+# Member D — Nayla Andhini Novia Dewani
 | # | Task | Tool | Prompt (ringkas) | Cara output digunakan |
 |---|------|------|------------------|----------------------|
 | 1 | | | | |

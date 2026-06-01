@@ -6,7 +6,7 @@
 |--------|-------|-------|--------------------|-----------------------------|
 | Muhamad Fharis Arradhien | Data Engineer | Claude | 45 % | No |
 | Kevindra Raditya Luthfiansyah | Estimation Analyst | Claude | 45 % | No |
-| Adhinda Zahra Dinanti | Inference Analyst | - | - % | No |
+| Adhinda Zahra Dinanti | Inference Analyst | Gemini | 40 % | No |
 | Nayla Andhini Novia Dewani | Hypothesis Analyst | - | - % | No |
 | Bram Radhitya Riezky Prayoga | Computation Analyst | - | - % | No |
 

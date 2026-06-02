@@ -7,7 +7,7 @@
 | Muhamad Fharis Arradhien | Data Engineer | Claude | 45 % | No |
 | Kevindra Raditya Luthfiansyah | Estimation Analyst | Claude | 45 % | No |
 | Adhinda Zahra Dinanti | Inference Analyst | Gemini | 40 % | No |
-| Nayla Andhini Novia Dewani | Hypothesis Analyst | - | - % | No |
+| Nayla Andhini Novia Dewani | Hypothesis Analyst | Gemini | 47 % | No |
 | Bram Radhitya Riezky Prayoga | Computation Analyst | - | - % | No |
 
 # Per-Member Detail
@@ -30,9 +30,10 @@
 | 2 | Pengecekan apakah kode sudah benar | Gemini | "apakah kode yang saya beri sudah benar?" | Digunakan sebagai validasi kode | Gemini menyarankan pergantian kode untuk beberapa bagian, namun saya mendiskusikan dengan tim dan tetap menggunakan konsep awal |
 
 # Member D — Nayla Andhini Novia Dewani
-| # | Task | Tool | Prompt (ringkas) | Cara output digunakan |
-|---|------|------|------------------|----------------------|
-| 1 | | | | |
+| # | Task | Tool | Prompt (ringkas) | Cara output digunakan | Bagaimana hasil dievaluasi |
+|---|------|------|------------------|----------------------|---------------------------|
+| 1 | Formulasi logika fungsi statistik modular Poisson Z-test | Gemini | "tolong buatkan kerangka fungsi modular python untuk rumus uji satu sempel dan dua sampel berbasis asumsi distribusi Poisson" | Digunakan sebagai basis pengembangan logika kode pada file sc/hypothesis.py sebelum diintegerasikan ke dalam eksekusi notebook 04 | Dievaluasi dengan mencocokkan hasil return value fungsi terhadap kalkulasi manual, serta memastikan tidak ada error saat di-import ke notebook |
+| 2 | Sinkronisasi visualisasi kurva distribusi dua arah (Subplot VS Code) | Gemini | "Tolong rapikan kode matplotlib subplots untuk memetakan z-score aktual dan daerah kritis z=1.96 secara berdampingan" | Digunakan untuk memperbaiki bug tata letak grafik di lingkungan lokal sehingga menghasilkan visualisasi kurva yang presisi dan bersih| Dievaluasi berdasarkan kejelasan posisi garis z-critical, area rejection region berwarna merah, dan ketepatan render plot saat cell dijalankan |
 
 # Member E — Bram Radhitya Riezky Prayoga
 | # | Task | Tool | Prompt (ringkas) | Cara output digunakan |

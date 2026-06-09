@@ -8,7 +8,7 @@
 | Kevindra Raditya Luthfiansyah | Estimation Analyst | Claude | 45 % | No |
 | Adhinda Zahra Dinanti | Inference Analyst | Gemini | 40 % | No |
 | Nayla Andhini Novia Dewani | Hypothesis Analyst | Gemini | 47 % | No |
-| Bram Radhitya Riezky Prayoga | Computation Analyst | - | - % | No |
+| Bram Radhitya Riezky Prayoga | Computation Analyst | ChatGPT | 45 % | No |
 
 # Per-Member Detail
 # Member A —  Muhamad Fharis Arradhien
@@ -38,6 +38,8 @@
 # Member E — Bram Radhitya Riezky Prayoga
 | # | Task | Tool | Prompt (ringkas) | Cara output digunakan |
 |---|------|------|------------------|----------------------|
-| 1 | | | | |
+| 1 | Memahami fungsi Monte Carlo Estimation | ChatGPT | gimana cara kerja fungsi estimate_probability pada monte carlo simulation | Digunakan sebagai referensi untuk memahami cara kerja fungsi estimasi probabilitas pada Monte Carlo Simulation |
+| 2 | Memahami pengaruh parameter terhadap performa Bloom Filter | ChatGPT | ap dampak pemilihan nilai m dan k yang terlalu besar atau terlalu kecil terhadap performa dan false positive rate bloom filter | Digunakan untuk memahami hubungan antarparameter Bloom Filter sebelum implementasi pada tugas |
+| 3 | Memahami mekanisme acceptance probability pada MCMC Knapsack | ChatGPT | knp algoritma mcmc ttp menerima solusi yang lebih buruk pada kondisi tertentu dan bagaimana hal tersebut membantu pencarian solusi optimal | Digunakan untuk memahami mekanisme acceptance probability pada algoritma MCMC Knapsack | 
 
 # Group Reflection

@@ -77,10 +77,10 @@ Perubahan rata-rata tingkat laporan bug sebelum dan sesudah rilis major pandas 2
 Probabilitas bahwa sebuah issue memakan waktu lebih dari 30 hari untuk ditutup sedang diestimasi tanpa menggunakan formula analitik, melainkan melalui komputasi numerik di 05_simulation.ipynb oleh Bram. Notebook ini menjalankan Simulasi Monte Carlo dengan ribuan iterasi untuk melihat pola distribusi waktu resolusi issue secara empiris, sehingga menghasilkan persentase probabilitas yang mendekati kondisi nyata di lapangan.
 
 # Dataset
-Sumber: GitHub REST API v3
-Repo diaudit: pandas-dev/pandas
-Tanggal pengambilan data: 24 - 05 - 2026
-Rentang waktu: 2020–2025
-Jumlah issues:5.650
-Jumlah PRs: 2.500
-Keterbatasan yang diketahui : API GitHub membatasi 5.000 request/jam, data diambil dengan pagination dan retry logic. Issues yang dibuka kembali diperlakukan sebagai satu entri berdasarkan tanggal penutupan terakhir.
+- Sumber: GitHub REST API v3
+- Repo diaudit: pandas-dev/pandas
+- Tanggal pengambilan data: 24 - 05 - 2026
+- Rentang waktu: 2020–2025
+- Jumlah issues:5.650
+- Jumlah PRs: 2.500
+- Keterbatasan yang diketahui : API GitHub membatasi 5.000 request/jam, data diambil dengan pagination dan retry logic. Issues yang dibuka kembali diperlakukan sebagai satu entri berdasarkan tanggal penutupan terakhir.

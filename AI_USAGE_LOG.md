@@ -12,7 +12,7 @@
 
 # Per-Member Detail
 # Member A —  Muhamad Fharis Arradhien
-| # | Task | Tool | Prompt (ringkas) | Cara output digunakan |
+| # | Task | Tool | Prompt (ringkas) | Cara output digunakan | 
 |---|------|------|------------------|----------------------|
 | 1 | Data Collecting | Claude | Ubahkan Logic dari Codingan diatas agar Mendapatkan Issues & PRs sesuai dengan tergat yang diinginkan | Mengambil referensi code untuk Colleting Data |
 | 2 | EDA | Claude | Buatkan Analogi Mengenai Pembuatan Grafik untuk pengerjaan EDA | Mengambil referensi Aalogi Code untuk Grafik pada EDA |

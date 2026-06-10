@@ -33,7 +33,7 @@ Repositori ini berisi audit statistik menyeluruh terhadap proyek open-source pan
 - ├── presentation/
 - │   └── video_link.md
 - ├── report/
-- │   └── statistical_health_report.pdf
+- │   └── Laporan Project Statistika & Probabilitas KELOMPOK 8.pdf
 - ├── src/
 - │   ├── estimator.py
 - │   ├── hypothesis.py
